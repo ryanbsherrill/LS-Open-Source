@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ryan <ryanbsherrill@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nodemon": "^1.11.0"
+  }
+}
