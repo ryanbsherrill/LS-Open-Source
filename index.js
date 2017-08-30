@@ -40,15 +40,17 @@
  * 
  * WHAT IS THIS CODE DOING?
 */
-const PORT = process.env.PORT || 5000;
-
 const express = require('express');
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
+
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send(`<h1>HELLO WORLDS!</h1>`);
-});
+// Creates a new instance of Google Passport Strategy
+// Strategy needs clientID and Secret
+passport.use(new GoogleStrategy());
 
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is listening on PORT: ${PORT}`);
 });
