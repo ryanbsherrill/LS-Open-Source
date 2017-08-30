@@ -46,8 +46,6 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 const app = express();
 
-// Creates a new instance of Google Passport Strategy
-// Strategy needs clientID and Secret
 passport.use(new GoogleStrategy());
 
 const PORT = process.env.PORT || 5000;
